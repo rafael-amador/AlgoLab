@@ -6,7 +6,10 @@ public class Stack<T> {
     
     public Stack(){//default constructor
         this.top = null;
-    }public Stack(SingleLinkedNode<T> top){//parameterized constructor
+        System.out.println("Stack() was created.");
+    }
+    public Stack(SingleLinkedNode<T> top){//parameterized constructor
         this.top = top;
+        System.out.println("Stack(top) was created.");
     }
 }

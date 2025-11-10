@@ -8,8 +8,10 @@ public class Graph<T> {
 
     public Graph(){//default constructor
         this.vertices = new ArrayList<>();
+        System.out.println("Graph() was created.");
     }
     public Graph(ArrayList<GraphNode<T>> vertices){//parametized constructor
         this.vertices = vertices;
+        System.out.println("Graph(vertices) was created.");
     }
 }

@@ -6,8 +6,10 @@ public class BinaryTree<T> {
 
     public BinaryTree(){//default constructor
         this.root = null;
+        System.out.println("BinaryTree() was created.");
     }
     public BinaryTree(TreeNode<T> root){//parametized constructor
         this.root = root;
+        System.out.println("BinaryTree(root) was created.");
     }
 }

@@ -11,21 +11,23 @@ public class MenuDriver {
     private final Scanner scnr;
     private final Stack<String> menuStack = new Stack<>(); //keeps tracks of user position in menu
 
-    private final CalculatorManager calculatorManager = new CalculatorManager();
-    private final DataStructureManager dataStructureManager = new DataStructureManager();
-    private final SearchManager searchManager = new SearchManager();
-    private final SortManager sortManager = new SortManager();
+    private final CalculatorManager calculatorManager;
+    private final DataStructureManager dataStructureManager;
+    private final SearchManager searchManager;
+    private final SortManager sortManager;
 
     private final MenuPrinter menuPrinter = new MenuPrinter(); //Object that stores/prints all menus
 
-    public MenuDriver(){ //Default Constructor
-        scnr = new Scanner(System.in);
-        menuStack.push("MAIN"); //starts at main menu
-    }
     public MenuDriver(Scanner scnr){ //Overloaded Constructor
         this.scnr = scnr;
         menuStack.push("MAIN"); //starts at main menu
+
+        calculatorManager = new CalculatorManager(scnr);
+        dataStructureManager = new DataStructureManager(scnr);
+        searchManager = new SearchManager(scnr);
+        sortManager = new SortManager(scnr);
     }
+    
     public void run(){
         while (!menuStack.isEmpty()){
             String currentMenu = menuStack.peek(); //looks at top of stack to see where the user is in the menu

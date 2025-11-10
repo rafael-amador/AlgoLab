@@ -1,6 +1,13 @@
 package Managers;
+import java.util.Scanner;
 
 public class CalculatorManager {
+    Scanner scnr;
+
+    public CalculatorManager(Scanner scnr){//paramterized constructor
+        this.scnr = scnr;
+    }
+
     //========================================<< Calculator Methods >>========================================//
     public void basicCalculator(){
 
