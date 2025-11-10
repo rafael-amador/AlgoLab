@@ -72,9 +72,10 @@ public class MenuPrinter {
         System.out.println("|=========>> LINKEDLIST MENU <<=========|");
         System.out.println("|           0: Back                     |");
         System.out.println("|           1: Create List              |");
-        System.out.println("|           2: Insert Element           |");
-        System.out.println("|           3: Delete Element           |");
-        System.out.println("|           4: Display Lists            |");
+        System.out.println("|           2: Delete List              |");
+        System.out.println("|           3: Insert Element           |");
+        System.out.println("|           4: Remove Element           |");
+        System.out.println("|           5: Display Lists            |");
         System.out.println("|=======================================|");
         System.out.println("\n\n");
         System.out.print("User Choice: ");
@@ -84,9 +85,10 @@ public class MenuPrinter {
         System.out.println("|==========>> BINTREE MENU <<===========|");
         System.out.println("|           0: Back                     |");
         System.out.println("|           1: Create Tree              |");
-        System.out.println("|           2: Insert Node              |");
-        System.out.println("|           3: Delete Node              |");
-        System.out.println("|           4: Display Trees            |"); //inorder, postorder, preorder
+        System.out.println("|           2: Delete Tree              |");
+        System.out.println("|           3: Insert Node              |");
+        System.out.println("|           4: Remove Node              |");
+        System.out.println("|           5: Display Trees            |"); //inorder, postorder, preorder
         System.out.println("|=======================================|");
         System.out.println("\n\n");
         System.out.print("User Choice: ");
@@ -95,10 +97,14 @@ public class MenuPrinter {
         System.out.println("\n\n");
         System.out.println("|===========>> GRAPHS MENU <<===========|");
         System.out.println("|           0: Back                     |");
-        System.out.println("|           1: Insert Vertex            |");
-        System.out.println("|           2: Add edge                 |");
-        System.out.println("|           3: Check Connectivity       |"); 
-        System.out.println("|           4: Display Graphs           |"); 
+        System.out.println("|           1: Create Graph             |");
+        System.out.println("|           2: Delete Graph             |");
+        System.out.println("|           3: Insert Vertex            |");
+        System.out.println("|           4: Add edge                 |");
+        System.out.println("|           5: Remove Vertex            |");
+        System.out.println("|           6: Remove Edge              |");
+        System.out.println("|           7: Check Connectivity       |"); 
+        System.out.println("|           8: Display Graphs           |"); 
         System.out.println("|=======================================|");
         System.out.println("\n\n");
         System.out.print("User Choice: ");
@@ -107,9 +113,11 @@ public class MenuPrinter {
         System.out.println("\n\n");
         System.out.println("|===========>> STACKS MENU <<===========|");
         System.out.println("|           0: Back                     |");
-        System.out.println("|           1: Push Element             |");
-        System.out.println("|           2: Pop Element              |");
-        System.out.println("|           3: Display Stack            |"); 
+        System.out.println("|           1: Create Stack             |");
+        System.out.println("|           2: Delete Stack             |");
+        System.out.println("|           3: Push Element             |");
+        System.out.println("|           4: Pop Element              |");
+        System.out.println("|           5: Display Stack            |"); 
         System.out.println("|=======================================|");
         System.out.println("\n\n");
         System.out.print("User Choice: ");
@@ -118,9 +126,11 @@ public class MenuPrinter {
         System.out.println("\n\n");
         System.out.println("|===========>> QUEUE MENU <<============|");
         System.out.println("|           0: Back                     |");
-        System.out.println("|           1: Enqueue Element          |");
-        System.out.println("|           2: Dequeue Element          |");
-        System.out.println("|           3: Display Queue            |"); 
+        System.out.println("|           1: Create Queue             |");
+        System.out.println("|           2: Delete Queue             |");
+        System.out.println("|           3: Enqueue Element          |");
+        System.out.println("|           4: Dequeue Element          |");
+        System.out.println("|           5: Display Queue            |"); 
         System.out.println("|=======================================|");
         System.out.println("\n\n");
         System.out.print("User Choice: ");

@@ -1,3 +1,4 @@
+package Menus;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -5,7 +6,6 @@ import Managers.CalculatorManager;
 import Managers.DataStructureManager;
 import Managers.SearchManager;
 import Managers.SortManager;
-import Menus.MenuPrinter;
 
 public class MenuDriver {
     private final Scanner scnr;
@@ -166,9 +166,10 @@ public class MenuDriver {
         switch(choice) {
             case "0" -> menuStack.pop(); //pop top of stack to go back
             case "1" -> dataStructureManager.createLinkedList();
-            case "2" -> dataStructureManager.insertLinkedList();
-            case "3" -> dataStructureManager.deleteLinkedList();
-            case "4" -> dataStructureManager.diplayLinkedList();
+            case "2" -> dataStructureManager.deleteLinkedList();
+            case "3" -> dataStructureManager.insertListElement();
+            case "4" -> dataStructureManager.removeListElement();
+            case "5" -> dataStructureManager.diplayList();
 
             default -> {
                 System.out.println("Invalid Choice.");
@@ -182,10 +183,11 @@ public class MenuDriver {
 
         switch(choice) {
             case "0" -> menuStack.pop(); //pop top of stack to go back
-            case "1" -> dataStructureManager.createTree();
-            case "2" -> dataStructureManager.insertTreeNode();
-            case "3" -> dataStructureManager.deleteTreeNode();
-            case "4" -> dataStructureManager.displayTree();
+            case "1" -> dataStructureManager.createBinaryTree();
+            case "2" -> dataStructureManager.deleteBinaryTree();
+            case "3" -> dataStructureManager.insertTreeElement();
+            case "4" -> dataStructureManager.removeTreeElement();
+            case "5" -> dataStructureManager.displayTree();
 
             default -> {
                 System.out.println("Invalid Choice.");
@@ -199,10 +201,14 @@ public class MenuDriver {
 
         switch(choice) {
             case "0" -> menuStack.pop(); //pop top of stack to go back
-            case "1" -> dataStructureManager.insertGraphVertex();
-            case "2" -> dataStructureManager.addGraphEdge();
-            case "3" -> dataStructureManager.checkGraphConnections();
-            case "4" -> dataStructureManager.displayGraph();
+            case "1" -> dataStructureManager.createGraph();
+            case "2" -> dataStructureManager.deleteGraph();
+            case "3" -> dataStructureManager.insertGraphVertex();
+            case "4" -> dataStructureManager.addGraphEdge();
+            case "5" -> dataStructureManager.removeGraphVertex();
+            case "6" -> dataStructureManager.removeGraphEdge();
+            case "7" -> dataStructureManager.checkGraphConnections();
+            case "8" -> dataStructureManager.displayGraph();
 
             default -> {
                 System.out.println("Invalid Choice.");
@@ -216,9 +222,11 @@ public class MenuDriver {
 
         switch(choice) {
             case "0" -> menuStack.pop(); //pop top of stack to go back
-            case "1" -> dataStructureManager.pushStackElement();
-            case "2" -> dataStructureManager.popStackElement();
-            case "3" -> dataStructureManager.displayStack();
+            case "1" -> dataStructureManager.createStack();
+            case "2" -> dataStructureManager.deleteStack();
+            case "3" -> dataStructureManager.pushStackElement();
+            case "4" -> dataStructureManager.popStackElement();
+            case "5" -> dataStructureManager.displayStack();
 
             default -> {
                 System.out.println("Invalid Choice.");
@@ -232,9 +240,11 @@ public class MenuDriver {
 
         switch(choice) {
             case "0" -> menuStack.pop(); //pop top of stack to go back
-            case "1" -> dataStructureManager.enqueueQueueElement();
-            case "2" -> dataStructureManager.dequeueQueueElement();
-            case "3" -> dataStructureManager.displayQueue();
+            case "1" -> dataStructureManager.createQueue();
+            case "2" -> dataStructureManager.deleteQueue();
+            case "3" -> dataStructureManager.enqueueQueueElement();
+            case "4" -> dataStructureManager.dequeueQueueElement();
+            case "5" -> dataStructureManager.displayQueue();
 
             default -> {
                 System.out.println("Invalid Choice.");
