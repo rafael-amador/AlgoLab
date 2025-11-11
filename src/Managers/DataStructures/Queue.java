@@ -1,7 +1,7 @@
 package Managers.DataStructures;
 import Managers.DataStructures.Nodes.SingleLinkedNode;
 
-public class Queue<T> {
+public class Queue<T extends Comparable<T>> {
     private SingleLinkedNode<T> front, rear;
 
     public Queue(){//default constructor
@@ -18,5 +18,15 @@ public class Queue<T> {
         this.front = front;
         this.rear = rear;
         System.out.println("Queue(front, rear) was created.");
+    }
+
+    public void enqueueElement(){
+
+    }
+    public void dequeueElement(){
+        
+    }
+    public void displayQueue(){ 
+        
     }
 }

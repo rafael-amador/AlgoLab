@@ -4,8 +4,16 @@ package Managers.DataStructures.StructureHolder;
 public class StructureHolder<T> { //generic so it can hold any type of structure
     private T structure;
     private String name;
-
     private String type;
+
+    //setters
+    public void setStructure(T structure){this.structure = structure;}
+    public void setName(String name){this.name = name;}
+    public void setType(String type){this.type = type;}
+    //getters
+    public T getStructure(){return this.structure;}
+    public String getName(){return this.name;}
+    public String getType(){return this.type;}
 
     public StructureHolder(){ //default constructor
         structure = null;
@@ -26,10 +34,5 @@ public class StructureHolder<T> { //generic so it can hold any type of structure
         System.out.println("StructureHolder(" + type + ", " + name + ") was created.");
     }
 
-    //setters
-    public void setStructure(T structure){this.structure = structure;}
-    public void setName(String name){this.name = name;}
-    //getters
-    public T getStructure(){return this.structure;}
-    public String getName(){return this.name;}
+    
 }
