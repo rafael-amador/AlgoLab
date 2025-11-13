@@ -1,6 +1,7 @@
 package Managers.DataStructures;
+import Managers.DataStructures.DisplayMethods.TreePrettyPrinter;
 import Managers.DataStructures.Nodes.TreeNode;
-
+import java.util.Scanner;
 public class BinaryTree<T extends Comparable<T>>{
     private TreeNode<T> root;
 
@@ -8,18 +9,25 @@ public class BinaryTree<T extends Comparable<T>>{
         this.root = null;
         System.out.println("BinaryTree() was created.");
     }
-    public BinaryTree(TreeNode<T> root){//parametized constructor
-        this.root = root;
-        System.out.println("BinaryTree(root) was created.");
+
+    public void insertNode(T element){
+       
+    }
+    public void insertNodeRec(T element,TreeNode<T> cur){
+        
+    }
+    public T removeElement(T element) { 
+        return element;
     }
 
-    public void insertElement(){
-
+    public void displayTree() {
+        
     }
-    public void removeElement(){
 
+    public void diplayInOrder(){
+        
     }
-    public void displayTree(){ //visual representation of binary tree using / and \ 
-
+    public boolean isEmpty(){
+        return false;
     }
 }

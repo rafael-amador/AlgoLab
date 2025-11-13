@@ -83,4 +83,7 @@ public class LinkedList<T extends Comparable<T>> {
         }
         System.out.println();
     }
+    public boolean isEmpty(){
+        return (head == null) ? true : false;
+    }
 }

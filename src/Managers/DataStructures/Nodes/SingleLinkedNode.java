@@ -24,4 +24,6 @@ public class SingleLinkedNode<T extends Comparable<T>> {
     //getters
     public SingleLinkedNode<T> getNext(){return this.next;}
     public T getData(){return this.data;}
+
+    
 }

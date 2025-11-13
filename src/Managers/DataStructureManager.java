@@ -119,13 +119,17 @@ public class DataStructureManager {
     }
     public void removeListElement(){
         StructureHolder<LinkedList<String>> structure = findStructure(listArr, types[0]);
+        if (structure != null && structure.getStructure().isEmpty()){
+            System.out.println(structure.getName() + " is empty. Can't remove elements. Try again.");
+            return;
+        }
         if (structure != null){
             structure.getStructure().displayList();
             System.out.print("Type the element you want to remove: ");
             String element = scnr.nextLine();
-            String removeNode = structure.getStructure().removeElement(element);
-            if (removeNode != null){
-                System.out.println("Remove was successful. Removed node that contained this data: \n" + removeNode);
+            String removeElement = String.valueOf(structure.getStructure().removeElement(element));
+            if (removeElement != null){
+                System.out.println("Remove was successful. Removed node that contained this data: \n" + removeElement);
             }
             else{
                 System.out.println("Element not found. Remove was unsuccessful. Try Again");
@@ -146,13 +150,13 @@ public class DataStructureManager {
         deleteArr(treeArr, types[1]);
     }
     public void insertTreeElement(){
-
-    }
-    public void removeTreeElement(){
-
+        
+    }   
+    public void removeTreeElement() {
+        
     }
     public void displayTree(){
-
+        
     }
     //-------------------------------------------<< Graph Methods >>------------------------------------------//
     public void createGraph(){ //done
